@@ -1,0 +1,246 @@
+body{
+    font-size:15px;
+    color:white;
+}
+
+.clock {
+	width: 20rem;
+	height: 20rem;
+	border: 7px solid #545271;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	padding: 2rem;
+	-webkit-box-shadow: 0 20px 30px rgba(104,75,106,0.65);
+	-moz-box-shadow: 0 20px 30px rgba(104,75,106,0.65);
+	box-shadow: 0 20px 30px rgba(104,75,106,0.65);
+	background: #545271;
+  }
+  
+  .outer-clock-face {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background: #fefefc;
+	-webkit-box-shadow: 0 20px 10px rgba(62,47,63,0.45);
+	-moz-box-shadow: 0 20px 10px rgba(62,47,63,0.45);
+	box-shadow: 0 20px 10px rgba(62,47,63,0.45);
+	overflow: hidden;
+  }
+  
+  .outer-clock-face::after {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg)
+  }
+  
+  .outer-clock-face::before,
+  .outer-clock-face::after,
+  .outer-clock-face .marking{
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	background: #b8b8c5;
+	z-index: 0;
+	left: 49%;
+  }
+  
+  .outer-clock-face .marking {
+	background: #bdbdcb;
+	width: 3px;
+  }
+  
+  .outer-clock-face .marking.marking-one {
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	transform: rotate(30deg)
+  }
+  
+  .outer-clock-face .marking.marking-two {
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg)
+  }
+  
+  .outer-clock-face .marking.marking-three {
+	-webkit-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	transform: rotate(120deg)
+  }
+  
+  .outer-clock-face .marking.marking-four {
+	-webkit-transform: rotate(150deg);
+	-moz-transform: rotate(150deg);
+	transform: rotate(150deg)
+  }
+  
+  .inner-clock-face {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background: #fefefc;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	z-index: 1;
+  }
+  
+  .inner-clock-face::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 16px;
+	height: 16px;
+	border-radius: 18px;
+	margin-left: -9px;
+	margin-top: -6px;
+	background: #4d4b63;
+	z-index: 11;
+  }
+  
+  .hand {
+	width: 50%;
+	right: 50%;
+	height: 6px;
+	background: #61afff;
+	position: absolute;
+	top: 50%;
+	border-radius: 6px;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .hand.hour-hand {
+	width: 20%;
+	z-index: 3;
+  }
+  
+  .hand.min-hand {
+	height: 3px;
+	z-index: 10;
+	width: 35%;
+  }
+  
+  .hand.second-hand {
+	background: #ff5e5e;
+	width: 40%;
+  }
+.mbh-tip {
+	background-color: #16a085;
+}
+	.mbh-tip:before {
+        content: "\f129";
+		margin-left: 2px;
+	}
+    .mbh-notification-box 
+    {
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+     margin-bottom: 25px;
+	padding: 10px 14px 10px 44px;
+	position: relative;
+    border-radius: 20px 5px;
+}
+	.mbh-notification-box:before {
+		font-family: FontAwesome;
+		font-size: 18px;
+		left: 14px;
+		position: absolute;
+        border-radius: 20px 5px;
+	}
+    
+    .mbh-notice {
+	background-color: #bea474;
+}
+	.mbh-notice:before {
+		content: "\f0a1";
+		margin-left: -1px;
+	}
+    .mbh-information {
+	background-color: #e8e4b3;
+}
+	.mbh-information:before {
+		/* content: "\f0eb"; */
+		margin-left: 4px;
+	}
+
+	.mbh-warning {
+		background-color: #e67e22;
+	}
+	.mbh-warning:before {
+		content: "\f12a";
+		margin-left: 5px;
+	}
+
+    .mbh-information-box 
+    {
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 5px 10px;
+	color: #150657;
+	font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
+	padding: 10px 14px 10px 44px;
+	position: relative;
+	
+   
+}
+	.mbh-information-box:before {
+		font-family: FontAwesome;
+		font-size: 18px;
+		left: 14px;
+		position: absolute;
+     
+    
+	}
+
+
+	.mbh-warning-box 
+    {
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 20px 5px;
+	color: #ffff;
+	font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
+	padding: 10px 14px 10px 44px;
+	position: relative;
+   
+}
+	.mbh-warning-box:before 
+	{
+		font-family: FontAwesome;
+		font-size: 18px;
+		left: 14px;
+		position: absolute;
+		border-radius: 20px 5px;
+     
+    
+	}
+
+.button
+{
+   border-radius: 10px;
+}
+
+.succesRrow{
+    margin-top: 30px;
+    height:30px;
+}
+.clock{
+   background-color: rgb(245, 209, 132);
+   border:1px solid black;
+   border-radius: 10px;
+}
+.right{
+   margin-top:50px;
+}

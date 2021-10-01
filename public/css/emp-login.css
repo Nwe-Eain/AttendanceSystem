@@ -1,0 +1,193 @@
+
+body, html {
+  height: 100%;
+  
+}
+
+* {
+  box-sizing: border-box;
+  border-color: #f7ae02;
+}
+
+.bg-img {
+  /* The image used efd89c */
+  background-image: url('/img/cover.png');
+  height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: difference;
+  /*background-size: cover;*/
+
+}
+
+/* Add styles to the form container */
+.formdiv {
+ margin-left: auto;
+ margin-right: auto;
+  justify-content: center;
+  margin: 20 auto;
+  max-width: 500px;
+  padding: 16px;
+  background-color: transparent;
+}
+
+.btn-login {
+  margin-top: 20px;
+  padding: 5px;
+  background: #FEE715;
+  border-radius: 10px 5px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: inset 5em 5em #C7A317;
+  transition: 0.5s;
+  width: 25%;
+  color: #3B3131;
+}
+
+.btn-cancel {
+
+  margin-top: 20px;
+  padding: 5px;
+  background: #FF6700;
+  border-radius: 10px 5px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: inset 5em 5em #CB6D51;
+  /*box-shadow: 6px 6px 6px white;, -6px -6px 6px white;*/
+  transition: 0.5s;
+  width: 25%;
+  color: #E9E4D4;
+
+}
+
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+/* Assign full width inputs*/ 
+ .inputs {
+  text-align: left;
+  margin-top: 30px;
+  
+}
+
+label, input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+.input-field::placeholder {
+  color:#f7ca02;
+}
+
+.input-field{
+  color:#f7ca02;
+}
+
+/* Set a hover effect for the button*/ 
+button:hover { 
+    opacity: 0.8; 
+    color: black;
+}   
+
+
+span{
+  position: absolute;
+  margin-left: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+
+.form-group .form-control {
+    padding-left: 2.375rem;
+}
+
+.form-group .form-control-icon {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    
+}
+
+ .form-group .input-field
+{
+  background:#F5F5F5;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 5px #FFFF66, inset -2px -2px 2px white;
+}
+
+.caption
+{                
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #FAF0DD ;
+  font-family:Garamond , serif;
+  text-shadow: 2px 2px 3px #E9AB17;
+  text-align: center;
+}   
+
+
+alert {
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+.alert {
+  background-color: #CB6D51;
+  margin: auto;
+  width: 60%;
+  height: 50px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-bottom: -50px;
+}
+.error-msg{
+  float: left;
+}
+
+.closebtn {
+  margin-left: 5px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+

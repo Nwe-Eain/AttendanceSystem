@@ -1,0 +1,178 @@
+.emp-profile {
+    padding: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+#label { border:none;}
+
+#data {
+    
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    font-size: 13px;
+}
+
+#data1 {
+    
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(219 180 180);
+  font-size: 13px;
+}
+
+#emp_skill
+{
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background: transparent;
+  border: none;
+  height: 40px;
+  min-width: 300px;
+  border-bottom: 1px solid rgb(219 180 180);
+  font-size: 13px;
+}
+
+#area {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffff;
+}
+
+#area1 {
+  background: transparent;
+  border: none;
+  border-bottom:1px solid rgb(219 180 180);
+}
+ 
+h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper{
+
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+.tab{
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#f1ef8180;
+  display:inline-block;
+  color:#000;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #f1ef8180;
+}
+.panels{
+  background:#fffffff6;
+  width: 500px;
+  box-shadow: 0 2rem 2rem #f0e9e980;
+  border-radius:3px;
+  overflow:hidden;
+  padding:40px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size: 16px;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+#name
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 30, 30);
+    font-size: 1rem;
+    
+}
+
+p
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#position
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 30, 30);
+    font-size: 1rem;
+    
+}
+
+label
+{
+    font-size: 13px;
+}
+
+.profile-work
+{
+    
+    text-align: justify;
+  
+    
+}
+
+.profile-head
+{
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.emp_skill
+{
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background: transparent;
+  border: none;
+  min-width: 300px;
+  border-bottom: 1px solid rgb(219 180 180);
+  font-size: 13px;
+}
